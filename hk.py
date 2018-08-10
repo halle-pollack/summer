@@ -3,10 +3,9 @@ from pprint import pprint
 from random import randint
 print("\n")
 n=input("What topic would you like your haiku to be about? ")
-#url = "https://api.datamuse.com/words?ml="+ n + "&md=s&max=500"
+
 url1 = "https://api.datamuse.com/words?rel_jjb="+ n + "&md=s&max=500"
 r1 = requests.get(url1)
-
 url2 = "https://api.datamuse.com/words?rel_jja="+ n + "&md=s&max=500"
 r2 = requests.get(url2)
 
